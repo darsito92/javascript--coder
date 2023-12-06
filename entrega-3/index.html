@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Adivinar Número</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-200 h-screen flex flex-col items-center justify-center">
+  <div class="bg-white p-8 rounded-lg shadow-md w-96">
+      <h1 class="text-2xl font-bold mb-4">Adivina el Número</h1>
+      <p class="mb-2">Intentos restantes: <span id="intentosRestantes">10</span></p>
+      <p class="mb-2">Tiempo: <span id="tiempo">0</span> segundos</p>
+      <input type="number" id="inputNumero" class="w-full p-2 mb-4" placeholder="Ingresa un número del 1 al 100">
+      <button id="btnIntentar" class="bg-blue-500 text-white p-2 rounded">Intentar</button>
+      <button id="btnReiniciar" class="bg-gray-500 text-white p-2 rounded mt-2">Reiniciar Juego</button>
+      <p id="resultado" class="mt-4"></p>
+  </div>
+
+  <div class="bg-white p-4 rounded-lg shadow-md mt-4 w-96">
+      <h2 class="text-lg font-bold mb-2">Mejores Puntajes</h2>
+      <ul id="puntajes" class="list-disc pl-4">
+          
+      </ul>
+  </div>
+  <script src="js/juego.js"></script>
+</body>
+
+
+</html>
+
+
